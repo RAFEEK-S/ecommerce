@@ -1,5 +1,5 @@
 import React from 'react'
-import Data from './Data'
+
 
 function Basket(props) {
   const itemsPrice = props.cartItems.reduce((a , c)=> a+ c.price * c.qty ,0)
@@ -39,7 +39,7 @@ function Basket(props) {
           </div>
           <div className='row'>
             <div className='col-2'> shipping Price</div>
-            <div className='col-1 text-right'>${shippingPrice .toFixed(2)}</div>
+            <div className='col-1 text-right'>${shippingPrice.toFixed(2)}</div>
 
           </div>
           <hr></hr>
